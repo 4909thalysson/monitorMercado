@@ -1,0 +1,295 @@
+body {
+    background-color: #12097f;
+    color: #12097f;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.headerInner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menuIcon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #12097f;
+}
+
+body {
+    background-color: #12097f;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.headerInner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menuIcon {
+    width: 30px;
+    cursor: pointer;
+}
+
+h1 {
+    color: #12097f;
+    margin: 0;
+}
+
+/* DASHBOARD */
+.topo-dashboard {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    padding: 100px;
+}
+
+/* MOEDAS */
+.moedas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.cardMoeda {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* NOTÍCIAS + CLIMA */
+.conteudo-inferior {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* NOTÍCIAS */
+.noticias-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cardNoticias {
+    width: 100%;
+    height: 450px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* CLIMA */
+.climas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardClima {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   SEÇÃO COTAÇÕES
+========================= */
+
+.cotacoesAnalises {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cotacoesInternas {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: start;
+    padding: 30px;
+    margin-left: 95px;
+
+}
+
+/* =========================
+   CHICAGO (CENTRALIZADO)
+========================= */
+
+.cotacoesGrid {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cardCotacoes {
+    width: 350px;
+    height: 230px;
+    background-color: #B2C3C6;
+    border: 3px solid #12097f;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cepeaPDFTable{
+    display: flex;
+    justify-content: center;
+}
+
+.cepeaPDFTable a {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #1f3a5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.cepeaPDFTable th,
+.cepeaPDFTable td {
+    border: 1px solid #d0d0d0; 
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.cepeaPDFTable th {
+    background-color: #f2f4f7; 
+    font-weight: 600;
+}
+
+.cepeaPDFTable tr:nth-child(even) {
+    background-color: #fafafa; 
+}
+
+.cepeaPDFTable tr:hover {
+    background-color: #eef3f9; 
+}
+.cepeaPDFTable a:hover {
+    background-color: #16304d;
+}
+
+
+/* =========================
+   TÍTULOS E TEXTO
+========================= */
+
+.cotacoesAnalises h1{
+    text-align: center;
+    background-color: #12097f;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+}
+
+.cotacoesAnalises h2 {
+    color: #12097f;
+    margin: 0;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.cotacoesAnalises p {
+    color: #12097f;
+    text-align: center;
+}
+
+.agradecimento{
+    background-color: #ffffff;
+    color: #12097f;
+    margin: 50px auto;
+    padding: 2rem;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.creditsContent{
+    max-width: 800px;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+}
+
+.creditsContent  p{
+    text-align: center
+}
+
+@media (max-width: 768px) {
+
+    .headerInner {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+
+    .topo-dashboard {
+        gap: 20px;
+    }
+
+    .conteudo-inferior {
+        grid-template-columns: 1fr;
+    }
+
+    .cotacoesGrid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardCotacoes {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+    .cepeaPDFTable {
+        overflow-x: auto;
+    }
+
+    .cepeaPDFTable table {
+        min-width: 600px;
+        font-size: 13px;
+    }

@@ -1,0 +1,205 @@
+body{
+    background-color: #12097f;
+    color: #12097f;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.titulo{
+    color: #12097f;
+}
+
+.headerInner{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+
+.menuIcon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.imgBusinessInicio{
+    width: 360px;
+    max-width: 40%;
+    padding: 0;
+}
+
+/* garante que a imagem dentro do container se ajuste bem */
+.businessInicio{
+    width: 100%;
+    height: auto;
+    display: block;
+} 
+
+.textoInicio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 05rem;
+    flex-wrap: wrap;
+}
+
+.tituloInicio, .paragrafoInicio{
+    max-width: 600px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.tituloInicio{
+    border: #ffffff 2px solid;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.paragrafoInicio{
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* garante que o texto fique à esquerda e a imagem à direita */
+.textoInicio > .imgBusinessInicio { order: 2; }
+.textoInicio > h1,
+.textoInicio > p { order: 1; text-align: left; }
+
+/* responsividade para telas pequenas */
+@media (max-width: 600px) {
+    .textoInicio { flex-direction: column; }
+    .imgBusinessInicio { max-width: 80%; }
+    .textoInicio > .imgBusinessInicio { order: 1; }
+    .textoInicio > h1,
+    .textoInicio > p { order: 2; }
+} 
+
+h1{
+    margin: 0;
+    font-size: 1.3em;
+    color: #ffffff;
+    text-align: left;
+}
+
+p{
+    font-size: 1em;
+    color: #ffffff;
+    text-align: left;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.infoSection{
+    background-color: #ffffff;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* faz os cards terem mesma altura por linha */
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 200px;}
+
+/* Aplicar borda somente à seção e limitar o efeito a h2/p dentro dela */
+.newsSection{
+    color: #12097f;
+    text-align: center;
+}
+
+.newsSection h2{
+    color: #12097f;
+    text-align: center;
+}
+.newsSection p{
+    color: #12097f;
+    text-align: center;
+}
+
+.infoCard{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* permite que o conteúdo ocupe a altura */
+    justify-content: space-between; /* distribui conteúdo verticalmente */
+    background-color: #12097f;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 20px;
+    flex: 1 1 250px; /* flexível, com base 250px */
+    min-width: 250px;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.infoCard:hover{
+    transform: scale(1.05);
+}
+
+/* ajustes de tipografia e responsividade */
+.infoCard h2{ margin: 0 0 0.5rem 0; font-size: 1.1rem; }
+.infoCard p { margin: 0; font-size: 0.95rem; }
+
+@media (max-width: 600px) {
+    .infoSection{ align-items: center; }
+    .infoCard{ flex: 0 1 100%; max-width: 600px; }
+}
+
+.contato{
+    background-color: #ffffff;
+    color: #12097f;
+    margin: 100px auto;
+    padding: 5rem;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.contato h2 { margin: 0; font-size: 1.6rem; color: #12097f; }
+.contato p { margin: 0 0 1rem 0; color: #444; }
+
+h2{
+    text-align: center;
+    color: #ffffff;
+}
+
+p{
+    color: #ffffff;
+}
+
+input, textarea, label{
+
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+button{
+    background-color: #ffffff;
+    color: #12097f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

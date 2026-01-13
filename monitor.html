@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="monitor.css">
+    <title>Monitor de Mercado</title>
+</head>
+<body>
+    <header>
+        <div class="headerInner">
+            <a href="home.html"><img class="menuIcon" src="assets/home.png" alt="homeIcon"></a>
+            <a href="monitor.css"><img class="menuIcon" src="assets/relatorio-de-negocios.png" alt="iconRelatorio"></a>
+            <h1>Monitor de Mercado</h1>
+        </div>
+    </header>
+
+    <section class="topo-dashboard">
+
+        <!-- MOEDAS (TOPO) -->
+        <div class="moedas-container">
+
+            <div class="cardMoeda">
+                <h2>Dólar / Real</h2>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                {
+                    "symbol": "FX_IDC:USDBRL",
+                    "colorTheme": "white",
+                    "isTransparent": true,
+                    "locale": "br",
+                    "width": "100%"
+                }
+                </script>
+            </div>
+
+            <div class="cardMoeda">
+                <h2>Real / Dólar</h2>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                {
+                    "symbol": "FX_IDC:BRLUSD",
+                    "colorTheme": "white",
+                    "isTransparent": true,
+                    "locale": "br",
+                    "width": "100%"
+                }
+                </script>
+            </div>
+
+            <div class="cardMoeda">
+                <h2>Euro / Real</h2>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                {
+                    "symbol": "FX_IDC:EURBRL",
+                    "colorTheme": "white",
+                    "isTransparent": true,
+                    "locale": "br",
+                    "width": "100%"
+                }
+                </script>
+            </div>
+
+            <div class="cardMoeda">
+                <h2>Real / Euro</h2>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                {
+                    "symbol": "FX_IDC:BRLEUR",
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "locale": "br",
+                    "width": "100%"
+                }
+                </script>
+            </div>
+
+        </div>
+
+        <!-- NOTÍCIAS + CLIMA -->
+        <div class="conteudo-inferior">
+
+            <!-- NOTÍCIAS (ESQUERDA) -->
+            <div class="noticias-container">
+                <div class="cardNoticias">
+                    <h2>Notícias Recentes</h2>
+                    <p>Fatores que influenciam o mercado agrícola</p>
+                    <script type="text/javascript"
+                        src="https://www.noticiasagricolas.com.br/widgets/noticias?subsecao=8,80,13,97,14,15,155,84,212,149,148,154,32,67&largura=100%25&altura=300px&fonte=Times%2C%20serif&tamanho=11pt&cortexto=333333&corlink=006666&qtd=15&output=js">
+                    </script>
+                </div>
+            </div>
+
+        <!-- CLIMA (DIREITA) -->
+        <div class="climas-container">
+            <div class="cardClima">
+                <a class="weatherwidget-io"
+                   href="https://forecast7.com/pt/n28d41n54d96/sao-luiz-gonzaga/"
+                   data-label_1="SÃO LUIZ GONZAGA"
+                   data-label_2="WEATHER"
+                   data-theme="clear">
+                </a>
+            </div>
+
+            <div class="cardClima">
+                <a class="weatherwidget-io"
+                   href="https://forecast7.com/pt/n28d39n55d11/rincao-de-sao-pedro/"
+                   data-label_1="RINCÃO DE SÃO PEDRO"
+                   data-label_2="São Luiz Gonzaga"
+                   data-theme="clear">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+
+    <!-- SCRIPT CLIMA -->
+    <script>
+    !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){
+            js=d.createElement(s);
+            js.id=id;
+            js.src='https://weatherwidget.io/js/widget.min.js';
+            fjs.parentNode.insertBefore(js,fjs);
+        }
+    }(document,'script','weatherwidget-io-js');
+    </script>
+
+    <section class="cotacoesAnalises">
+    <h1><b>COTAÇÕES AGRÍCOLAS</b></h1>
+    <h2>Bolsa de Chicago</h2>
+    <p>As commodities agrícolas seguem o horário da Bolsa de Chicago (CBOT). Durante o dia, os valores exibidos correspondem ao último fechamento oficial, sendo atualizados após o encerramento do pregão.</p>
+
+        <div class="cotacoesGrid">
+            <div class="cardCotacoes">
+                <!-- Widgets Notícias Agrícolas - id=23 -->
+                <script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=23&fonte=Arial%2C%20Helvetica%2C%20sans-serif&tamanho=10pt&largura=350px&cortexto=333333&corcabecalho=B2C3C6&corlinha=DCE7E9&imagem=true&output=js"></script>
+            </div>
+
+            <div class="cardCotacoes">
+                <!-- Widgets Notícias Agrícolas - id=78 -->
+                <script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=78&fonte=Arial%2C%20Helvetica%2C%20sans-serif&tamanho=10pt&largura=350px&cortexto=333333&corcabecalho=B2C3C6&corlinha=DCE7E9&imagem=true&output=js"></script>
+            </div>
+
+            <div class="cardCotacoes">
+                <!-- Widgets Notícias Agrícolas - id=10 -->
+                <script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=10&fonte=Arial%2C%20Helvetica%2C%20sans-serif&tamanho=10pt&largura=350px&cortexto=333333&corcabecalho=B2C3C6&corlinha=DCE7E9&imagem=true&output=js"></script>
+            </div>
+        </div>
+
+        
+        <h2>Mercado interno & análises do CEPEA</h2>
+
+        <div class="cepeaPDFTable">
+        <table>
+            <tr>
+                <th>Tílulo</th>
+                <th>Link do PDF</th>
+                <th>Resumo produzido com auxílio  de IA</th>
+            </tr>
+            <tr>
+                <td>Soja Dezembro 2025</td>
+                <td>
+                    <a href="https://www.cepea.org.br/upload/revista/pdf/0898361001767805485.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Acessar PDF
+                    </a>
+                </td>
+                <td>O Brasil atingiu produção recorde de 171,48 milhões de toneladas em 2025, com exportações históricas. <br>
+                    Contudo, a ampla oferta global e disputas comerciais levaram as cotações às menores médias desde 2019.</td>
+            <tr>
+                <td>Trigo dezembro 2025</td>
+                <td>
+                    <a href="https://www.cepea.org.br/upload/revista/pdf/0659944001767805553.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Acessar PDF
+                    </a>
+                </td>
+                <td>Apesar da menor área semeada desde 2020, a produção brasileira cresceu. <br>
+                    Os preços caíram no segundo semestre, pressionados pela oferta mundial recorde <br>
+                    e pela maior competitividade do trigo importado.</td>
+            <tr>
+                <td>Milho dezembro 2025</td>
+                <td>
+                    <a href="https://www.cepea.org.br/upload/revista/pdf/0268254001767805392.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Acessar PDF
+                    </a>
+                </td>
+                <td>Em 2025, o Brasil atingiu produção recorde de milho, somando 141 milhões de toneladas. <br>
+                    Apesar da oferta, os preços recuperaram-se e fecharam o ano com alta nominal de 13%.</td>
+            </tr>
+            </tr>
+
+                <td>Soja novembro 2025</td>
+                <td>
+                    <a href="https://www.cepea.org.br/upload/revista/pdf/0404033001765203630.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Acessar PDF
+                    </a>
+                </td>
+                <td>Chuvas irregulares e demanda externa aquecida elevaram preços da soja em novembro/2025. <br>
+                    Farelo valorizou 5,7%, enquanto óleo caiu 4,9%. Projeções indicam menor oferta global e estoques reduzidos. ​</td>
+            </tr>
+            <tr>
+                <td>Trigo novembro 2025</td>
+                <td>
+                    <a href="https://www.cepea.org.br/upload/revista/pdf/0801641001764951684.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Acessar PDF
+                    </a>
+                </td>
+                <td>A produção mundial de trigo deve atingir recorde em 2025/26, com oferta maior que o consumo. <br>
+                    ​No Brasil, preços caíram devido à desvalorização do dólar e ampla oferta externa.</td>
+            </tr>
+            <tr>
+                <td>Milho novembro 2025</td>
+                <td>
+                    <a href="https://www.cepea.org.br/upload/revista/pdf/0145352001764951728.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Acessar PDF
+                    </a>
+                </td>
+                <td>Preços do milho subiram em novembro devido à retração de vendedores e maior demanda. ​ <br>
+                    Exportações cresceram, safra verão avançou, <br>e produção mundial estimada 
+                    em 1,28 bilhão de toneladas.​</td>
+            </tr>
+        </table>
+
+    </section>
+
+    <section class="agradecimento">
+
+        <div class="creditsContent">
+            
+        <h3><b>AGRADECIMENTOS</b></h3>
+
+        <p>Especial agradecimento aos sites:</p>  
+        <a href="https://www.noticiasagricolas.com.br/" target="_blank">Notícias Agrícolas</a> Por forneçer widgetsagrícolas
+        <a href="https://www.tradingview.com/" target="_blank">TradingView</a> por forneçer indicadores financeiros
+        <a href="https://www.cepea.org.br/br">CEPEA</a> por disponibilizar análises das commodities agrícolas
+
+        </div>
+
+</section>
+
+    </section>
+
+</body>
+</html>
