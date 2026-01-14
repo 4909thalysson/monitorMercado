@@ -125,8 +125,13 @@ p{
     text-align: center;
 }
 .newsSection p{
+    align-items: center;
     color: #12097f;
+}
+
+.newsSection h4 {
     text-align: center;
+    color: #12097f;
 }
 
 .infoCard{
@@ -139,9 +144,10 @@ p{
     color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 15px;
-    padding: 20px;
+    padding: 70px;
     flex: 1 1 250px; /* flexível, com base 250px */
     min-width: 250px;
+    min-height: 300px   ;
     box-sizing: border-box;
     transition: transform 0.2s;
 }

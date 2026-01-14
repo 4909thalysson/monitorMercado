@@ -65,7 +65,7 @@
                 {
                     "symbol": "FX_IDC:BRLEUR",
                     "colorTheme": "light",
-                    "isTransparent": false,
+                    "isTransparent": true,
                     "locale": "br",
                     "width": "100%"
                 }
@@ -74,10 +74,8 @@
 
         </div>
 
-        <!-- NOTÍCIAS + CLIMA -->
         <div class="conteudo-inferior">
 
-            <!-- NOTÍCIAS (ESQUERDA) -->
             <div class="noticias-container">
                 <div class="cardNoticias">
                     <h2>Notícias Recentes</h2>
@@ -86,9 +84,16 @@
                         src="https://www.noticiasagricolas.com.br/widgets/noticias?subsecao=8,80,13,97,14,15,155,84,212,149,148,154,32,67&largura=100%25&altura=300px&fonte=Times%2C%20serif&tamanho=11pt&cortexto=333333&corlink=006666&qtd=15&output=js">
                     </script>
                 </div>
+
+                <div class="podcast-container">
+                    <div class="cardPodcast">
+                        <h2><b>Safras PODCAST</b></h2>
+                        <p>Ouça as principais atualizações do mercado agrícola.</p>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/0HrLqIqOicmim1qfsjBjuw?utm_source=generator&theme=0" width="400" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
             </div>
 
-        <!-- CLIMA (DIREITA) -->
         <div class="climas-container">
             <div class="cardClima">
                 <a class="weatherwidget-io"
@@ -108,7 +113,6 @@
                 </a>
             </div>
         </div>
-
     </div>
 
     </section>
@@ -127,9 +131,9 @@
     </script>
 
     <section class="cotacoesAnalises">
-    <h1><b>COTAÇÕES AGRÍCOLAS</b></h1>
-    <h2>Bolsa de Chicago</h2>
-    <p>As commodities agrícolas seguem o horário da Bolsa de Chicago (CBOT). Durante o dia, os valores exibidos correspondem ao último fechamento oficial, sendo atualizados após o encerramento do pregão.</p>
+        <h1><b>COTAÇÕES AGRÍCOLAS</b></h1>
+        <h2>Bolsa de Chicago - <strong>Mercado Internacional</strong></h2>
+        <p>Os valores exibidos correspondem ao último fechamento oficial, sendo atualizados após o encerramento do pregão.</p>
 
         <div class="cotacoesGrid">
             <div class="cardCotacoes">
@@ -148,8 +152,28 @@
             </div>
         </div>
 
-        
-        <h2>Mercado interno & análises do CEPEA</h2>
+        <h2>Mercado <strong>Interno</strong></h2>
+
+        <div class="cotacoesGrid">
+
+            <div class="cardCotacoes">
+                <!-- Widgets Notícias Agrícolas - Soja -->
+                <script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=22&fonte=Arial%2C%20Helvetica%2C%20sans-serif&tamanho=10pt&largura=300px&cortexto=333333&corcabecalho=B2C3C6&corlinha=DCE7E9&imagem=true&output=js"></script>
+            </div>
+
+            <div class="cardCotacoes">
+                <!-- Widgets Notícias Agrícolas - Trigo -->
+                <script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=211&fonte=Arial%2C%20Helvetica%2C%20sans-serif&tamanho=10pt&largura=400px&cortexto=333333&corcabecalho=B2C3C6&corlinha=DCE7E9&imagem=true&output=js"></script>
+            </div>
+
+            <div class="cardCotacoes">
+                <!-- Widgets Notícias Agrícolas - Milho -->
+                <script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=251&fonte=Arial%2C%20Helvetica%2C%20sans-serif&tamanho=10pt&largura=300px&cortexto=333333&corcabecalho=B2C3C6&corlinha=DCE7E9&imagem=true&output=js"></script>
+            </div>
+
+        </div>
+
+        <h2>Análises CEPEA</h2>
 
         <div class="cepeaPDFTable">
         <table>
@@ -242,15 +266,20 @@
         <h3><b>AGRADECIMENTOS</b></h3>
 
         <p>Especial agradecimento aos sites:</p>  
-        <a href="https://www.noticiasagricolas.com.br/" target="_blank">Notícias Agrícolas</a> Por forneçer widgetsagrícolas
-        <a href="https://www.tradingview.com/" target="_blank">TradingView</a> por forneçer indicadores financeiros
-        <a href="https://www.cepea.org.br/br">CEPEA</a> por disponibilizar análises das commodities agrícolas
+        <a href="https://www.noticiasagricolas.com.br/" target="_blank">Notícias Agrícolas</a> Por forneçer widgets agrícolas |
+        <a href="https://www.tradingview.com/" target="_blank">TradingView</a> por forneçer indicadores financeiros |
+        <a href="https://www.cepea.org.br/br">CEPEA</a> por disponibilizar análises das commodities agrícolas.
 
         </div>
 
+    </section>
+
 </section>
 
-    </section>
+<footer style="margin:80px 0 40px; text-align:center; color:#ffff; font-size:14.5px;">
+    Sistema desenvolvido e mantido pela <strong>Equipe do GI</strong><br>
+    Cambaí Sementes - 2026
+</footer>
 
 </body>
 </html>

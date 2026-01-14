@@ -98,14 +98,27 @@ h1 {
     justify-content: flex-start;
 }
 
+.podcast-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
 .cardNoticias {
-    width: 100%;
+    width: 50%;
     height: 450px;
     background: #ffffff;
     border-radius: 18px;
     padding: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
+
+.cardPodcast{   
+    border-radius: 18px;
+    margin-left: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
 
 /* CLIMA */
 .climas-container {
@@ -158,7 +171,7 @@ h1 {
 
 .cardCotacoes {
     width: 350px;
-    height: 230px;
+    height: 330px;
     background-color: #B2C3C6;
     border: 3px solid #12097f;
     border-radius: 10px;
